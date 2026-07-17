@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "mappings": [
+    {
+      "structure_id": "BFCTST",
+      "class": "SteelTensionConcentricBracedFrame",
+      "bracing_type": "Concentric Tension Only Bracing"
+    }
+  ]
+}

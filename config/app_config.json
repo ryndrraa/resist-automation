@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "result_min": 0,
+  "result_warning_max": 100,
+  "autosave_seconds": 30,
+  "recursive_scan_default": false
+}

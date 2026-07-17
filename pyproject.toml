@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "resist-automation"
+version = "0.1.0"
+description = "Core automation for RESIST 4.0 RSX and Excel workflows"
+requires-python = ">=3.11"
+dependencies = [
+  "openpyxl>=3.1,<4",
+  "pydantic>=2.7,<3",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9"]
+gui = ["customtkinter>=5.2,<6", "pyinstaller>=6,<7"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+pythonpath = ["src"]
